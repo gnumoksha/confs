@@ -1,2 +1,2 @@
 # confs
-My configuration files for many softwares (mostly GNU/Linux daemons)
+Meus arquivos de configuração para vários softwares (a maioria daemons para GNU/Linux)
