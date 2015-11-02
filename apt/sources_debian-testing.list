@@ -1,1 +1,44 @@
-/etc/apt/sources.list
+
+# Adicionar chaves
+# apt-key adv --keyserver wwwkeys.pgp.net --recv-keys $chave
+# OU
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $chave
+# OU
+# apt-key adv --recv-keys --keyserver keys.gnupg.net $chave
+
+deb http://ftp.br.debian.org/debian/ stretch main contrib non-free
+deb-src http://ftp.br.debian.org/debian/ stretch main contrib
+
+deb http://security.debian.org/ stretch/updates main contrib non-free
+deb-src http://security.debian.org/ stretch/updates main contrib
+
+# Bro
+# https://www.bro.org/download/packages.html
+# wget http://download.opensuse.org/repositories/network:bro/Debian_8.0/Release.key
+# apt-key add — < Release.key
+# deb http://download.opensuse.org/repositories/network:/bro/Debian_8.0/ /
+
+# Spotify
+# https://www.spotify.com/br/download/linux/
+deb http://repository.spotify.com testing non-free
+
+# Docker
+# wget -q O - https://get.docker.com/ | sh
+deb https://apt.dockerproject.org/repo debian-stretch main
+
+# http://wiki.x2go.org/doku.php/wiki:repositories:debian
+# X2Go Repository (release builds)
+deb http://packages.x2go.org/debian jessie main
+# X2Go Repository (sources of release builds)
+deb-src http://packages.x2go.org/debian jessie main
+# X2Go Repository (nightly builds)
+# deb http://packages.x2go.org/debian jessie heuler
+# X2Go Repository (sources of nightly builds)
+# deb-src http://packages.x2go.org/debian jessie heuler
+
+# http://www.ubuntugames.org/repository
+# wget -q -O - 'http://archive.ubuntugames.org/ubuntugames.key' | sudo apt-key add -
+deb http://archive.ubuntugames.org ubuntugames main
+deb-src http://archive.ubuntugames.org ubuntugames main
+
+#EOF
